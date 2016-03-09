@@ -1,0 +1,25 @@
+<ion-view view-title="Marcação de Ponto">
+  <ion-content class="padding">    
+    <button  style="min-height:80px;" class="{{botaoEntradaStyle}}" ng-click="showConfirm('e')">
+              Ponto Entrada
+            </button>
+    <button  style="min-height:80px;" class="{{botaoSaidaStyle}}" ng-click="showConfirm('s')">
+              Ponto Saída
+    </button>
+    
+    
+    <div class="list card">
+      <div class="item item-divider">Registros</div>
+      <div class="item item-body">
+        <div>
+          Entrada: <b>{{horaEntrada}}</b>
+        </div>
+      </div>
+      <div class="item item-body">
+        <div>
+          Saída: <b>{{horaSaida}}</b>
+        </div>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>
